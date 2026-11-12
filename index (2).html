@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#D10A11">
+<title>leipzig.cctv — CCTV Jernih, Pasang Rapi, Pantau dari HP</title>
+<meta name="description" content="Paket CCTV lengkap: kamera, perekam, dan pemasangan rapi. Full HD, night vision, pantau dari HP, garansi 1 tahun. Survei lokasi gratis.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="leipzig.cctv — CCTV Jernih, Pasang Rapi, Pantau dari HP">
+<meta property="og:description" content="Paket CCTV lengkap dengan pemasangan rapi, garansi 1 tahun, dan survei lokasi gratis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23D10A11'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23fff'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23161112'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--card:#FAF5F5;--ink:#161112;--mute:#5F5557;--line:#E7DDDE;--accent:#C4090F;--fill:#D10A11;--fill-hover:#A8070D;--onfill:#FFFFFF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#131011;--card:#1B1718;--ink:#F1EDEC;--mute:#A89FA0;--line:#322C2D;--accent:#FF4A50}}
+:root[data-theme="dark"]{--bg:#131011;--card:#1B1718;--ink:#F1EDEC;--mute:#A89FA0;--line:#322C2D;--accent:#FF4A50}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font:800 24px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.logo b{color:var(--accent)}
+nav{display:flex;gap:22px;align-items:center}
+nav a{text-decoration:none;color:var(--mute);font-weight:600}
+nav a:hover{color:var(--ink)}
+nav a.btn,nav a.btn:hover{color:var(--onfill)}
+.btn{display:inline-block;background:var(--fill);color:var(--onfill);padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:16px;text-align:center}
+.btn:hover{background:var(--fill-hover)}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn.alt:hover{border-color:var(--fill);color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:48px 0 64px}
+.hero h1{font-size:clamp(36px,5.5vw,60px);font-weight:800;letter-spacing:-.02em}
+.hero p{color:var(--mute);max-width:46ch;margin:18px 0 26px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.sim{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:26px;min-width:0}
+.sim .big{font:800 clamp(54px,9vw,84px)/1 "Bricolage Grotesque",sans-serif;color:var(--accent)}
+.sim .big small{font-size:22px;color:var(--mute);font-weight:500;margin-left:6px}
+.price{font:700 22px "Bricolage Grotesque",sans-serif;margin:6px 0 18px}
+input[type=range]{width:100%;accent-color:var(--fill);margin:6px 0 4px}
+.ticks{display:flex;justify-content:space-between;color:var(--mute);font-size:14px}
+.facts{list-style:none;padding:0;margin:20px 0 0;border-top:1px solid var(--line)}
+.facts li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);gap:12px}
+.facts span:first-child{color:var(--mute)}
+.facts span:last-child{font-weight:600;text-align:right}
+section{padding:60px 0}
+section h2{font-size:clamp(28px,4vw,40px);font-weight:800;margin-bottom:10px}
+.lead{color:var(--mute);max-width:56ch;margin:0 0 32px}
+.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.plan{background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;min-width:0}
+.plan.pop{border-color:var(--accent);box-shadow:0 0 0 1.5px var(--accent)}
+.tag{align-self:flex-start;background:var(--fill);color:#fff;font-weight:600;font-size:13px;padding:2px 10px;border-radius:99px;margin-bottom:10px}
+.plan h3{font-size:18px;color:var(--mute);font-weight:700}
+.plan .mb{font:800 44px/1.1 "Bricolage Grotesque",sans-serif;margin:8px 0 0}
+.plan .mb small{font-size:16px;color:var(--mute);font-weight:500}
+.plan .rp{font:700 22px "Bricolage Grotesque",sans-serif;margin:12px 0 2px}
+.plan ul{list-style:none;padding:0;margin:16px 0 22px;color:var(--mute);font-size:16px;flex:1}
+.plan li{padding:5px 0;border-top:1px solid var(--line)}
+.note{color:var(--mute);font-size:14px;margin-top:16px}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.feat>div{min-width:0}
+.feat h3{font-size:20px;margin-bottom:6px}
+.feat p{margin:0;color:var(--mute)}
+.band{background:var(--card);border-block:1px solid var(--line)}
+details{border-bottom:1px solid var(--line);padding:16px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--mute);margin:10px 0 0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+label{display:block;font-weight:600;margin:14px 0 4px}
+input[type=text],input[type=tel],select{width:100%;padding:11px 12px;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+#ok{margin-top:14px;font-weight:600;color:var(--accent);min-height:1.6em}
+footer{background:#E3161E;padding:28px 0;color:#fff;font-size:15px}
+footer a{color:#fff;overflow-wrap:anywhere}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.topbar{background:#D10A11;color:#fff;text-align:center;padding:9px 16px;font-size:15px;font-weight:600}
+.topbar a{color:#fff;text-underline-offset:3px}
+.promo{position:relative;overflow:hidden;background:radial-gradient(60% 90% at 85% 40%,rgba(255,255,255,.14) 0%,rgba(255,255,255,0) 70%),linear-gradient(135deg,#D10A11 0%,#A8070D 100%);color:#fff;border-radius:18px;padding:clamp(24px,5vw,48px);display:grid;grid-template-columns:1.15fr .85fr;gap:32px;align-items:center}
+.promo .kick{display:inline-block;background:#fff;color:#A8070D;font-weight:600;font-size:14px;padding:2px 12px;border-radius:99px;margin-bottom:14px}
+.promo h2{text-wrap:balance;font-size:clamp(32px,5.4vw,56px);margin:0 0 14px;color:#fff;letter-spacing:-.02em}
+.promo p{margin:0 0 16px;max-width:46ch;color:#FBE1E2}
+.pz{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin:0 0 18px}
+.pz s{color:#FBE1E2;opacity:.8;font-size:20px}
+.pz b{font:800 clamp(34px,5vw,48px)/1 "Bricolage Grotesque",sans-serif}
+.pz span{color:#FBE1E2;font-size:15px}
+.promo ul{list-style:none;padding:0;margin:0 0 24px}
+.promo li{padding:3px 0}
+.promo li::before{content:"✓ ";font-weight:700}
+.btn.wh{background:#fff;color:#D10A11}
+.btn.wh:hover{background:#FBE1E2}
+.btn.ol{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.7)}
+.btn.ol:hover{background:rgba(255,255,255,.14)}
+.art{position:relative;background:#1B0A0C;border-radius:16px;padding:18px 18px 20px;box-shadow:0 18px 40px rgba(0,0,0,.35);min-width:0}
+.art .rec{display:flex;justify-content:space-between;gap:8px;font:600 13px/1 "Source Sans 3",sans-serif;color:#F1EDEC;letter-spacing:.04em}
+.art .rec i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#FF2A31;margin-right:6px;animation:bl 1.2s steps(2,start) infinite}
+.art svg{display:block;width:100%;height:auto;margin:6px 0 10px}
+.beam{animation:sc 3s ease-in-out infinite alternate}
+@keyframes bl{to{visibility:hidden}}
+@keyframes sc{from{opacity:.5}to{opacity:1}}
+.badge{position:absolute;top:-22px;right:-8px;width:104px;height:104px;border-radius:50%;background:#fff;color:#A8070D;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(10deg);box-shadow:0 8px 20px rgba(0,0,0,.3);font:800 22px/1 "Bricolage Grotesque",sans-serif;text-align:center}
+.badge small{font:600 14px/1.2 "Source Sans 3",sans-serif;margin-top:3px}
+.cd{text-align:center;color:#F1EDEC}
+.cd small{display:block;color:#FBE1E2;margin-bottom:8px;font-size:14px}
+.cd .t{display:flex;justify-content:center;gap:10px}
+.cd .t div{background:#fff;color:#A8070D;border-radius:10px;min-width:64px;padding:9px 6px;font:800 30px/1 "Bricolage Grotesque",sans-serif}
+.cd .t span{display:block;font:600 12px "Source Sans 3",sans-serif;margin-top:4px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;background:var(--fill);color:#fff;padding:12px 18px;border-radius:99px;font-weight:600;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+.fab:hover{background:var(--fill-hover)}
+@media(max-width:900px){.badge{right:6px}}
+@media(prefers-reduced-motion:reduce){.art .rec i,.beam{animation:none}}
+.promo :focus-visible,.topbar :focus-visible{outline-color:#fff}.fab:focus-visible{outline-color:var(--ink)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gal figure{margin:0;min-width:0}
+.ph{position:relative;aspect-ratio:3/2;border-radius:14px;overflow:hidden;background:#1B0A0C}
+.ph svg,.ph img{position:absolute;inset:0;width:100%;height:100%}
+.ph img{object-fit:cover}
+.gal h3{font-size:18px;margin-top:10px}
+.gal p{margin:2px 0 0;color:var(--mute);font-size:15px}
+img,svg{max-width:100%}
+@media(min-width:1400px){.wrap{max-width:1240px}body{font-size:18px}}
+@media(max-width:1080px){.plans,.feat,.gal{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.hero,.contact,.promo{grid-template-columns:1fr}.hero{padding:28px 0 44px;gap:28px}section{padding:44px 0}}
+@media(max-width:640px){body{font-size:16px}.wrap{padding:0 16px}.plans,.feat,.gal{grid-template-columns:1fr}nav{gap:12px}nav a:not(.btn){display:none}.btn{padding:11px 18px}.sim{padding:20px}.row .btn{flex:1}footer .wrap{flex-direction:column}}
+@media(max-width:360px){.logo{font-size:20px}.plan{padding:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Penyesuaian HP, tablet, dan PC */
+.wrap{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.topbar{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0 6px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.badge{top:46px;right:12px;width:92px;height:92px;font-size:20px}
+.art .rec{flex-wrap:wrap}
+#ts{white-space:nowrap}
+summary{padding:4px 0}
+@media(min-width:1700px){.wrap{max-width:1400px}body{font-size:19px}.promo{padding:56px}}
+@media(max-width:900px){.art{max-width:480px;width:100%;justify-self:center}}
+@media(max-width:640px){
+.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.topbar{font-size:14px;min-height:3.4em}
+.promo{padding:22px 18px;border-radius:14px}
+.promo .row .btn{flex:1 1 100%}
+.pz b{font-size:34px}
+.art{padding:14px}
+.art .rec{font-size:12px}
+.badge{width:78px;height:78px;font-size:17px;top:40px;right:8px}
+.badge small{font-size:12px}
+.cd .t div{min-width:58px;font-size:26px}
+.gal{grid-template-columns:repeat(2,1fr);gap:12px}
+.gal h3{font-size:16px}
+.gal p{font-size:14px}
+footer{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+.fab{padding:11px 16px}
+}
+@media(max-width:340px){.gal{grid-template-columns:1fr}}
+@media(max-width:360px){.topbar{font-size:13px}.cd .t{gap:6px}.cd .t div{min-width:52px}}
+</style>
+</head>
+<body>
+<div class="topbar"><span id="tb">Gratis 1 kamera tambahan untuk paket Rumah dan Toko.</span> <a href="#promo">Lihat promo</a></div>
+<div class="wrap">
+<header>
+  <a class="logo" href="#">leipzig<b>.cctv</b></a>
+  <nav><a href="#paket">Paket</a><a href="#kamera">Kamera</a><a href="#pemasangan">Pemasangan</a><a href="#fitur">Keunggulan</a><a href="#faq">FAQ</a><a class="btn" href="#pesan">Pesan</a></nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>CCTV jernih siang dan malam, bisa dipantau dari HP.</h1>
+    <p>Paket lengkap kamera, perekam, dan pemasangan rapi oleh teknisi kami. Garansi 1 tahun dan layanan purna jual yang mudah dihubungi.</p>
+    <div class="row"><a class="btn" href="#pesan">Pesan sekarang</a><a class="btn alt" href="#paket">Lihat harga</a></div>
+  </div>
+  <div class="sim" aria-live="polite">
+    <div class="big"><span id="sp">4</span><small>kamera</small></div>
+    <div class="price" id="pr">Rp3.500.000 sudah dipasang</div>
+    <label for="rg" style="margin:0">Geser untuk pilih jumlah kamera</label>
+    <input id="rg" type="range" min="0" max="3" step="1" value="1">
+    <div class="ticks"><span>2</span><span>4</span><span>8</span><span>16</span></div>
+    <ul class="facts">
+      <li><span>Perekam</span><span id="dv"></span></li>
+      <li><span>Hard disk</span><span id="hd"></span></li>
+      <li><span>Cocok untuk</span><span id="us"></span></li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<section id="promo" style="padding-top:0"><div class="wrap">
+  <div class="promo">
+    <div>
+      <span class="kick">Promo terbatas sampai 30 November</span>
+      <h2>Pasang 4 kamera, dapat 5. Kamera kelima gratis.</h2>
+      <p>Berlaku untuk paket Rumah dan Toko. Survei lokasi juga gratis.</p>
+      <div class="pz"><s>Rp4.300.000</s><b>Rp3.500.000</b><span>5 kamera, sudah dipasang</span></div>
+      <ul><li>Full HD dengan night vision</li><li>Garansi 1 tahun, pemasangan rapi</li><li>Pantau dari HP kapan saja</li></ul>
+      <div class="row"><a class="btn wh" href="#pesan" id="pp" data-p="Rumah 4 kamera">Ambil promo ini</a><a class="btn ol" href="https://wa.me/6285148299931?text=Halo%20leipzig.cctv%2C%20saya%20tertarik%20promo%20gratis%201%20kamera." target="_blank" rel="noopener">Tanya via WhatsApp</a></div>
+    </div>
+    <div class="art">
+      <div class="badge">GRATIS<small>1 kamera</small></div>
+      <div class="rec"><span><i></i>REC</span><span id="ts">CAM 01</span></div>
+      <svg viewBox="0 0 320 170" role="img" aria-label="Ilustrasi kamera CCTV yang sedang merekam">
+        <defs><linearGradient id="bm" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+        <polygon class="beam" points="150,92 320,28 320,168" fill="url(#bm)"/>
+        <rect x="0" y="30" width="22" height="84" rx="4" fill="#3A2A2C"/>
+        <rect x="22" y="68" width="42" height="12" fill="#6B5F61"/>
+        <g transform="rotate(12 100 80)"><rect x="60" y="56" width="92" height="46" rx="10" fill="#F1EDEC"/><rect x="66" y="50" width="76" height="9" rx="4" fill="#D10A11"/><rect x="138" y="62" width="24" height="34" rx="6" fill="#161112"/><circle cx="150" cy="79" r="8" fill="#0B0B0B" stroke="#FF4A50" stroke-width="3"/></g>
+      </svg>
+      <div class="cd" aria-live="off">
+        <small>Promo berakhir dalam</small>
+        <div class="t"><div><b id="cd-d">0</b><span>hari</span></div><div><b id="cd-h">0</b><span>jam</span></div><div><b id="cd-m">0</b><span>menit</span></div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="paket" style="padding-top:20px"><div class="wrap">
+  <h2>Paket dan harga</h2>
+  <p class="lead">Harga paket sudah termasuk kamera, perekam, hard disk, kabel, dan biaya pemasangan.</p>
+  <div class="plans">
+    <div class="plan"><h3>Rumah Mini</h3><div class="mb">2<small> kamera</small></div><div class="rp">Rp1.900.000</div>
+      <ul><li>Kamera 2 MP Full HD</li><li>DVR 4 channel, HDD 1 TB</li><li>Night vision hingga 20 m</li><li>Pantau lewat aplikasi HP</li></ul><a class="btn alt" href="#pesan" data-p="Rumah Mini 2 kamera">Pilih Rumah Mini</a></div>
+    <div class="plan pop"><span class="tag">Paling diminati</span><h3>Rumah</h3><div class="mb">4<small> kamera</small></div><div class="rp">Rp3.500.000</div>
+      <ul><li>Kamera 2 MP, 2 indoor + 2 outdoor</li><li>DVR 4 channel, HDD 2 TB</li><li>Tahan hujan IP66</li><li>Rekaman tersimpan ± 30 hari</li></ul><a class="btn" href="#pesan" data-p="Rumah 4 kamera">Pilih Rumah</a></div>
+    <div class="plan"><h3>Toko</h3><div class="mb">8<small> kamera</small></div><div class="rp">Rp6.900.000</div>
+      <ul><li>Kamera audio 2 MP dan 5 MP</li><li>DVR 8 channel, HDD 4 TB</li><li>Notifikasi saat ada gerakan</li><li>Instalasi 1 hari</li></ul><a class="btn alt" href="#pesan" data-p="Toko 8 kamera">Pilih Toko</a></div>
+    <div class="plan"><h3>Bisnis</h3><div class="mb">16<small> kamera</small></div><div class="rp">Rp13.500.000</div>
+      <ul><li>Kamera 5 MP, sudut lebar</li><li>NVR 16 channel, HDD 8 TB</li><li>Kamera cadangan siap tukar</li><li>Survei lokasi gratis</li></ul><a class="btn alt" href="#pesan" data-p="Bisnis 16 kamera">Pilih Bisnis</a></div>
+  </div>
+  <p class="note">Perlu kamera PTZ, kamera plat nomor, atau jumlah titik lebih banyak? Hubungi kami untuk penawaran khusus. Harga di atas contoh dan belum termasuk PPN.</p>
+</div></section>
+
+<section id="kamera"><div class="wrap">
+  <h2>Pilihan kamera dan perekam</h2>
+  <p class="lead">Kami bantu pilih jenis yang pas setelah survei lokasi, sesuai tempat dan kebutuhan Anda.</p>
+  <div class="gal">
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi kamera dome di plafon"><defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient><linearGradient id="bm1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg1)"/><rect width="240" height="26" fill="#2A1A1C"/><polygon points="120,84 36,160 204,160" fill="url(#bm1)"/><ellipse cx="120" cy="30" rx="48" ry="7" fill="#CFC8C7"/><path d="M72 30A48 48 0 0 0 168 30Z" fill="#F1EDEC"/><circle cx="120" cy="56" r="17" fill="#161112" stroke="#FF4A50" stroke-width="3"/><circle cx="114" cy="50" r="4" fill="#fff" opacity=".6"/></svg><img src="foto/dome.jpg" alt="Foto Kamera Dome" loading="lazy" onerror="this.remove()"></div><figcaption><h3>Kamera Dome</h3><p>Indoor dan tidak mencolok. Cocok untuk ruang tamu, kantor, dan toko.</p></figcaption></figure>
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi kamera bullet outdoor di dinding"><defs><linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient><linearGradient id="bm2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg2)"/><rect width="30" height="160" fill="#3A2A2C"/><rect x="30" y="52" width="44" height="12" fill="#6B5F61"/><polygon points="200,62 240,32 240,94" fill="#fff" fill-opacity=".22"/><rect x="66" y="40" width="112" height="44" rx="12" fill="#F1EDEC"/><rect x="62" y="34" width="104" height="10" rx="5" fill="#D10A11"/><rect x="170" y="46" width="30" height="32" rx="7" fill="#161112"/><circle cx="188" cy="62" r="9" fill="#0B0B0B" stroke="#FF4A50" stroke-width="3"/></svg><img src="foto/bullet.jpg" alt="Foto Kamera Bullet" loading="lazy" onerror="this.remove()"></div><figcaption><h3>Kamera Bullet</h3><p>Outdoor tahan hujan IP66 dengan night vision 20–30 m.</p></figcaption></figure>
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi kamera PTZ di tiang"><defs><linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg3)"/><rect x="40" y="0" width="14" height="160" fill="#3A2A2C"/><rect x="54" y="30" width="62" height="10" fill="#6B5F61"/><rect x="100" y="38" width="30" height="12" rx="3" fill="#E8E2E1"/><circle cx="115" cy="76" r="32" fill="#161112" stroke="#F1EDEC" stroke-width="4"/><path d="M92 62a28 28 0 0 1 36 0" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/><circle cx="122" cy="82" r="9" fill="#0B0B0B" stroke="#FF4A50" stroke-width="3"/><g fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M178 70h40M184 64l-6 6 6 6M212 64l6 6-6 6"/><path d="M198 100v-24M192 82l6-6 6 6" transform="translate(0 20)"/></g></svg><img src="foto/ptz.jpg" alt="Foto Kamera PTZ" loading="lazy" onerror="this.remove()"></div><figcaption><h3>Kamera PTZ</h3><p>Putar dan zoom dari HP. Untuk halaman luas dan area parkir.</p></figcaption></figure>
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi monitor empat kamera dan perekam DVR"><defs><linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg4)"/><rect x="52" y="10" width="136" height="88" rx="6" fill="#0B0B0B" stroke="#F1EDEC" stroke-width="3"/><g fill="#3A2A2C"><rect x="58" y="16" width="62" height="38"/><rect x="124" y="16" width="58" height="38"/><rect x="58" y="58" width="62" height="34"/><rect x="124" y="58" width="58" height="34"/></g><g fill="#FF4A50"><circle cx="64" cy="22" r="2.5"/><circle cx="130" cy="22" r="2.5"/><circle cx="64" cy="64" r="2.5"/><circle cx="130" cy="64" r="2.5"/></g><path d="M70 50l16-14 14 10 14-12M138 50l14-12 12 8 12-10" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/><rect x="108" y="98" width="24" height="8" fill="#6B5F61"/><rect x="60" y="112" width="120" height="30" rx="5" fill="#F1EDEC"/><g fill="#161112"><rect x="70" y="122" width="50" height="3"/><rect x="70" y="129" width="50" height="3"/></g><circle cx="150" cy="127" r="3.5" fill="#D10A11"/><circle cx="162" cy="127" r="3.5" fill="#2E9E5B"/></svg><img src="foto/dvr.jpg" alt="Foto DVR / NVR" loading="lazy" onerror="this.remove()"></div><figcaption><h3>DVR / NVR</h3><p>Menyimpan rekaman 15–30 hari dan kapasitasnya bisa ditambah.</p></figcaption></figure>
+  </div>
+  <p class="note">Gambar di atas hanya ilustrasi. Ingin foto asli produk kami atau hasil pemasangan? Hubungi kami lewat WhatsApp.</p>
+</div></section>
+
+<section id="pemasangan"><div class="wrap">
+  <h2>Proses pemasangan</h2>
+  <p class="lead">Dari survei sampai serah terima, semuanya dikerjakan teknisi kami sendiri.</p>
+  <div class="gal">
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi survei lokasi rumah dan titik kamera"><defs><linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg5)"/><polygon points="172,72 232,38 232,112" fill="#fff" fill-opacity=".16"/><rect x="70" y="72" width="100" height="68" fill="#3A2A2C"/><polygon points="60,74 120,28 180,74" fill="#6B5F61"/><rect x="108" y="100" width="24" height="40" fill="#161112"/><rect x="82" y="86" width="18" height="18" fill="#F1EDEC" fill-opacity=".85"/><rect x="140" y="86" width="18" height="18" fill="#F1EDEC" fill-opacity=".85"/><circle cx="172" cy="72" r="8" fill="#D10A11" stroke="#fff" stroke-width="3"/><circle cx="68" cy="74" r="8" fill="#D10A11" stroke="#fff" stroke-width="3"/><rect x="12" y="94" width="38" height="50" rx="5" fill="#F1EDEC"/><g fill="#161112"><rect x="19" y="106" width="24" height="3"/><rect x="19" y="115" width="24" height="3"/><rect x="19" y="124" width="16" height="3"/></g></svg><img src="foto/survei.jpg" alt="Survei lokasi" loading="lazy" onerror="this.remove()"></div><figcaption><h3>Survei lokasi</h3><p>Teknisi menentukan titik kamera yang paling efektif. Gratis.</p></figcaption></figure>
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi penarikan kabel kamera ke perekam"><defs><linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg6)"/><path d="M30 122H120V54H196" fill="none" stroke="#6B5F61" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 122H120V54H196" fill="none" stroke="#FF4A50" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 8"/><g fill="#CFC8C7"><circle cx="70" cy="122" r="4"/><circle cx="120" cy="90" r="4"/><circle cx="160" cy="54" r="4"/></g><rect x="8" y="108" width="40" height="28" rx="5" fill="#F1EDEC"/><circle cx="38" cy="122" r="3.5" fill="#2E9E5B"/><rect x="196" y="40" width="34" height="28" rx="8" fill="#F1EDEC"/><circle cx="222" cy="54" r="6" fill="#0B0B0B" stroke="#FF4A50" stroke-width="3"/></svg><img src="foto/kabel.jpg" alt="Tarik kabel rapi" loading="lazy" onerror="this.remove()"></div><figcaption><h3>Tarik kabel rapi</h3><p>Kabel disembunyikan di plafon dan dinding, tidak berantakan.</p></figcaption></figure>
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi teknisi memasang kamera di dinding"><defs><linearGradient id="bg7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg7)"/><rect x="160" y="0" width="80" height="160" fill="#3A2A2C"/><rect x="134" y="42" width="30" height="9" fill="#6B5F61"/><rect x="88" y="30" width="54" height="28" rx="8" fill="#F1EDEC"/><rect x="84" y="25" width="50" height="8" rx="4" fill="#D10A11"/><circle cx="96" cy="46" r="7" fill="#0B0B0B" stroke="#FF4A50" stroke-width="3"/><g stroke="#CFC8C7" stroke-width="4" stroke-linecap="round"><path d="M34 152L58 72M72 152L96 72M42 126H80M50 98H88"/></g><circle cx="76" cy="52" r="10" fill="#F1EDEC"/><path d="M62 90Q76 62 90 74L94 98H66Z" fill="#D10A11"/></svg><img src="foto/pasang.jpg" alt="Pemasangan kamera" loading="lazy" onerror="this.remove()"></div><figcaption><h3>Pemasangan kamera</h3><p>Kamera dipasang kokoh dengan sudut pandang yang sudah disurvei.</p></figcaption></figure>
+    <figure><div class="ph"><svg viewBox="0 0 240 160" role="img" aria-label="Ilustrasi tes kamera lewat HP"><defs><linearGradient id="bg8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1B0A0C"/><stop offset="1" stop-color="#4A1216"/></linearGradient></defs><rect width="240" height="160" fill="url(#bg8)"/><rect x="84" y="12" width="72" height="136" rx="12" fill="#161112" stroke="#F1EDEC" stroke-width="3"/><g fill="#3A2A2C"><rect x="92" y="24" width="26" height="36"/><rect x="122" y="24" width="26" height="36"/><rect x="92" y="64" width="26" height="36"/><rect x="122" y="64" width="26" height="36"/></g><g fill="#FF4A50"><circle cx="96" cy="29" r="2"/><circle cx="126" cy="29" r="2"/><circle cx="96" cy="69" r="2"/><circle cx="126" cy="69" r="2"/></g><circle cx="120" cy="124" r="14" fill="#2E9E5B"/><path d="M113 124l5 5 10-11" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/></svg><img src="foto/tes.jpg" alt="Tes dan serah terima" loading="lazy" onerror="this.remove()"></div><figcaption><h3>Tes dan serah terima</h3><p>Semua kamera dites dan aplikasi HP dipasang sebelum kami pulang.</p></figcaption></figure>
+  </div>
+  <p class="note">Gambar di atas hanya ilustrasi. Ingin lihat hasil pemasangan sebenarnya? Minta contoh foto lewat WhatsApp.</p>
+</div></section>
+
+<section id="fitur" class="band"><div class="wrap">
+  <h2>Kenapa leipzig.cctv</h2>
+  <p class="lead">Sistem keamanan yang dipasang untuk dipakai bertahun-tahun, bukan sekadar terpasang.</p>
+  <div class="feat">
+    <div><h3>Gambar jernih</h3><p>Resolusi Full HD sampai 5 MP, plat nomor dan wajah tetap terbaca saat diperbesar.</p></div>
+    <div><h3>Night vision</h3><p>Tetap terlihat jelas dalam gelap, dengan mode warna penuh di beberapa tipe kamera.</p></div>
+    <div><h3>Pantau dari HP</h3><p>Lihat kamera langsung dan putar ulang rekaman dari mana saja lewat internet.</p></div>
+    <div><h3>Pemasangan rapi</h3><p>Kabel tersembunyi, posisi kamera ditentukan lewat survei, dan area dites sebelum kami pulang.</p></div>
+    <div><h3>Garansi 1 tahun</h3><p>Kamera dan perekam yang rusak ditukar. Klaim cukup lewat WhatsApp.</p></div>
+    <div><h3>Harga jelas</h3><p>Satu harga paket, tanpa biaya tersembunyi. Pembayaran via transfer atau QRIS.</p></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>Pertanyaan umum</h2>
+  <div style="max-width:720px;margin-top:20px">
+    <details><summary>Berapa lama proses pemasangan?</summary><p>Setelah survei lokasi, paket rumah biasanya selesai dalam 1 hari. Paket toko dan bisnis 1–2 hari.</p></details>
+    <details><summary>Apakah bisa dipantau dari luar rumah?</summary><p>Bisa, selama perekam terhubung ke internet. Kami bantu memasang aplikasi di HP Anda.</p></details>
+    <details><summary>Berapa lama rekaman tersimpan?</summary><p>Rata-rata 15–30 hari, tergantung jumlah kamera dan kapasitas hard disk. Kapasitas bisa ditambah.</p></details>
+    <details><summary>Apakah CCTV tetap jalan saat listrik padam?</summary><p>Perlu UPS atau baterai cadangan. Kami bisa tambahkan sebagai opsi saat pemesanan.</p></details>
+  </div>
+</div></section>
+
+<section id="pesan" class="band"><div class="wrap contact">
+  <div>
+    <h2>Pesan pemasangan</h2>
+    <p class="lead">Isi formulir, tim kami menghubungi Anda dalam 1 hari kerja untuk survei lokasi gratis.</p>
+    <p style="margin:0;color:var(--mute)">WhatsApp: <a href="https://wa.me/6285148299931" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">+62 851-4829-9931</a><br>Gmail: <a href="mailto:leipziggroop130@gmail.com" style="color:var(--accent);font-weight:600;overflow-wrap:anywhere">leipziggroop130@gmail.com</a><br>Jam layanan: setiap hari, 08.00–20.00 WIB</p>
+  </div>
+  <div>
+    <label for="nm">Nama lengkap</label><input id="nm" type="text" autocomplete="name">
+    <label for="hp">Nomor WhatsApp</label><input id="hp" type="tel" autocomplete="tel">
+    <label for="pk">Paket</label>
+    <select id="pk"><option>Rumah Mini 2 kamera</option><option selected>Rumah 4 kamera</option><option>Toko 8 kamera</option><option>Bisnis 16 kamera</option><option>Khusus / lebih dari 16 kamera</option></select>
+    <p class="row" style="margin:18px 0 0"><button class="btn" id="go" type="button">Kirim permintaan</button><a class="btn alt" href="https://wa.me/6285148299931?text=Halo%20leipzig.cctv%2C%20saya%20ingin%20pasang%20CCTV." target="_blank" rel="noopener">Chat WhatsApp</a></p>
+    <div id="ok" role="status"></div>
+  </div>
+</div></section>
+
+<a class="fab" href="https://wa.me/6285148299931?text=Halo%20leipzig.cctv%2C%20saya%20tertarik%20promo%20gratis%201%20kamera." target="_blank" rel="noopener">Chat promo</a>
+
+<footer><div class="wrap"><span>© 2026 leipzig.cctv. Semua hak dilindungi.</span><a href="mailto:leipziggroop130@gmail.com">leipziggroop130@gmail.com</a></div></footer>
+
+<script>
+var P=[
+ {n:2,p:1900000,d:"DVR 4 channel",h:"1 TB",u:"Rumah kecil, kos"},
+ {n:4,p:3500000,d:"DVR 4 channel",h:"2 TB",u:"Rumah 1–2 lantai"},
+ {n:8,p:6900000,d:"DVR 8 channel",h:"4 TB",u:"Toko, ruko, gudang kecil"},
+ {n:16,p:13500000,d:"NVR 16 channel",h:"8 TB",u:"Kantor, pabrik, sekolah"}];
+var rg=document.getElementById("rg");
+function idr(n){return "Rp"+n.toLocaleString("id-ID")}
+function upd(){
+ var x=P[+rg.value];
+ document.getElementById("sp").textContent=x.n;
+ document.getElementById("pr").textContent=idr(x.p)+" sudah dipasang";
+ document.getElementById("dv").textContent=x.d;
+ document.getElementById("hd").textContent=x.h;
+ document.getElementById("us").textContent=x.u;
+}
+rg.addEventListener("input",upd);upd();
+document.querySelectorAll("[data-p]").forEach(function(a){a.addEventListener("click",function(){document.getElementById("pk").value=a.getAttribute("data-p")})});
+var MSG=["Gratis 1 kamera tambahan untuk paket Rumah dan Toko.","Survei lokasi gratis, pemasangan rapi, garansi 1 tahun.","Promo berakhir 30 November. Kuota pemasangan terbatas."],mi=0;
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches){setInterval(function(){mi=(mi+1)%MSG.length;document.getElementById("tb").textContent=MSG[mi]},4500)}
+function clk(){var d=new Date(),z=function(n){return String(n).padStart(2,"0")};document.getElementById("ts").textContent="CAM 01  "+z(d.getDate())+"/"+z(d.getMonth()+1)+"/"+d.getFullYear()+" "+z(d.getHours())+":"+z(d.getMinutes())+":"+z(d.getSeconds())}
+clk();setInterval(clk,1000);
+var promoOn=false,expired=false;
+document.getElementById("pp").addEventListener("click",function(){promoOn=true});
+document.querySelectorAll(".plan [data-p]").forEach(function(a){a.addEventListener("click",function(){promoOn=false})});
+var END=new Date("2026-11-30T23:59:59+07:00");
+function tick(){
+ var d=Math.max(0,END-new Date()),m=Math.floor(d/60000);
+ document.getElementById("cd-d").textContent=Math.floor(m/1440);
+ document.getElementById("cd-h").textContent=Math.floor(m%1440/60);
+ document.getElementById("cd-m").textContent=m%60;
+ if(d===0&&!expired){
+  expired=true;promoOn=false;
+  document.querySelector(".topbar").style.display="none";
+  document.getElementById("promo").style.display="none";
+  var f=document.querySelector(".fab");f.textContent="Chat WhatsApp";f.href="https://wa.me/6285148299931?text=Halo%20leipzig.cctv%2C%20saya%20ingin%20pasang%20CCTV.";
+ }
+}
+tick();setInterval(tick,30000);
+document.getElementById("go").addEventListener("click",function(){
+ var n=document.getElementById("nm").value.trim(),h=document.getElementById("hp").value.trim(),o=document.getElementById("ok"),pkg=document.getElementById("pk").value,pr=promoOn&&!expired&&(pkg==="Rumah 4 kamera"||pkg==="Toko 8 kamera");
+ if(!n||!h){o.style.color="inherit";o.textContent="Isi nama dan nomor WhatsApp terlebih dahulu.";return}
+ o.style.color="";o.textContent="Terima kasih, "+n+". WhatsApp akan terbuka, tekan kirim untuk menyelesaikan pesanan.";
+ var b="Halo leipzig.cctv, saya ingin pasang CCTV.\n\nNama: "+n+"\nWhatsApp: "+h+"\nPaket: "+pkg+(pr?"\nPromo: gratis 1 kamera tambahan (akhir November)":"");
+ window.open("https://wa.me/6285148299931?text="+encodeURIComponent(b),"_blank","noopener");
+});
+</script>
+</body>
+</html>
